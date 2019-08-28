@@ -28,7 +28,7 @@
     </header>
     <main>
       <article>
-        <div class="big">
+        <div class="medium">
           <span class="red">Q</span>&<span class="red">A</span>s
         </div>
         <section>
@@ -61,8 +61,45 @@
           <p>God, too many to write down. Just ask.</p>
         </section>
       </article>
+      <div class="big spin">///</div>
+      <article>
+        <div class="medium">Portfolio</div>
+        <div class="grid">
+          <div class="box">
+            <h2>
+              <a href="https://otto1010.github.io/spelling-client"
+                >Spelling test</a
+              >
+            </h2>
+            <p>
+              this was a little attempt to use socket.io. the first person to
+              type in the word on the screen is the winner. Enjoy!
+            </p>
+          </div>
+          <div class="box">
+            <h2>Spelling test</h2>
+            <p>this was a little attempt to use socket.io. enjoy!</p>
+          </div>
+          <div class="box">
+            <h2>Spelling test</h2>
+            <p>this was a little attempt to use socket.io. enjoy!</p>
+          </div>
+          <div class="box">
+            <h2>Spelling test</h2>
+            <p>this was a little attempt to use socket.io. enjoy!</p>
+          </div>
+          <div class="box">
+            <h2>Spelling test</h2>
+            <p>this was a little attempt to use socket.io. enjoy!</p>
+          </div>
+          <div class="box">
+            <h2>Spelling test</h2>
+            <p>this was a little attempt to use socket.io. enjoy!</p>
+          </div>
+        </div>
+      </article>
     </main>
-    <div class="big spin">///</div>
+    <div class="big spin">////</div>
     <footer>
       <p class="center">Well, you made it. This is the end...</p>
     </footer>
@@ -81,6 +118,11 @@
   body {
     margin: 50px 200px 0 200px;
     font-family: "Space Mono";
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
   }
   h1,
   h2,
@@ -109,12 +151,14 @@
   }
   .spin {
     border-radius: 50%;
-    -webkit-transition: -webkit-transform 0.4s ease-in-out;
-    transition: transform 0.4s ease-in-out;
+    -webkit-transition: color 2s, -webkit-transform 0.4s ease-in-out;
+    transition: color 2s, transform 0.4s ease-in-out;
+    color: black;
   }
   .spin:hover {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+    color: red;
   }
 </style>
 <link
