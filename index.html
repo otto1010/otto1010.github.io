@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="big spin">/</div>
+      <h1 class="center">&lt;Otto's Website <sup>est. 2019&gt;</sup></h1>
+      <div class="big spin">/</div>
+      <div class="big shadow">Welcome</div>
+      <div class="medium center spaced">
+        Take a Seat
+      </div>
+      <div class="medium center spaced">
+        and - <span class="red">Enjoy</span>
+      </div>
+      <div class="medium center spaced">
+        my <span class="red">Website</span>
+      </div>
+      <div class="big spin">//</div>
+      <button onclick="intro()">Play Intro</button>
+      <h2>This is my website</h2>
+      <p>Now that you're sitting comfortably, let's begin...</p>
+    </header>
+    <main>
+      <article>
+        <div class="big">
+          <span class="red">Q</span>&<span class="red">A</span>s
+        </div>
+        <section>
+          <h2>Who am I?</h2>
+          <p>You can call me Otto.</p>
+        </section>
+        <section>
+          <h2>Why Do I Like Programming</h2>
+          <p>
+            Because you can make anything your heart desires with your brain!
+            You get to use the two most important parts of your body...
+          </p>
+        </section>
+        <section>
+          <h2>Where Am I From?</h2>
+          <p>
+            I'm from England of course! Originally London but now I travel all
+            over...
+          </p>
+        </section>
+        <section>
+          <h2>Why Would I Enjoy This Course?</h2>
+          <p>
+            Sometimes programming at home can be lonely. Maybe it would be a
+            good idea to meet new people...
+          </p>
+        </section>
+        <section>
+          <h2>Technologies I Love</h2>
+          <p>God, too many to write down. Just ask.</p>
+        </section>
+      </article>
+    </main>
+    <div class="big spin">///</div>
+    <footer>
+      <p class="center">Well, you made it. This is the end...</p>
+    </footer>
+  </body>
+</html>
+<script>
+  function intro() {
+    window.speechSynthesis.speak(
+      new SpeechSynthesisUtterance(
+        "hello and welcome to my brilliant website! my name is otto. i hope you enjoy everything my website has to offer... cheerio"
+      )
+    );
+  }
+</script>
+<style>
+  body {
+    margin: 50px 200px 0 200px;
+    font-family: "Space Mono";
+  }
+  h1,
+  h2,
+  .medium {
+    font-family: "Concert One";
+  }
+  .big {
+    font-size: 200px;
+    text-align: center;
+  }
+  .medium {
+    font-size: 100px;
+    text-align: center;
+  }
+  .shadow {
+    text-shadow: 2px 1px 5px red;
+  }
+  .spaced {
+    letter-spacing: 30px;
+  }
+  .center {
+    text-align: center;
+  }
+  .red {
+    color: red;
+  }
+  .spin {
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+  }
+  .spin:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+</style>
+<link
+  href="https://fonts.googleapis.com/css?family=Concert+One|Space+Mono&display=swap"
+  rel="stylesheet"
+/>
