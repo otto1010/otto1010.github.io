@@ -8,20 +8,18 @@
   </head>
   <body>
     <header>
-      <div class="big spin">/</div>
+      <div class="big spin center">/</div>
       <h1 class="center">&lt;Otto's Website <sup>est. 2019&gt;</sup></h1>
-      <div class="big spin">/</div>
-      <div class="big shadow">Welcome</div>
-      <div class="medium center spaced">
-        Take a Seat
-      </div>
-      <div class="medium center spaced">
-        and - <span class="red">Enjoy</span>
-      </div>
-      <div class="medium center spaced">
-        my <span class="red">Website</span>
-      </div>
-      <div class="big spin">//</div>
+      <div class="big spin center">/</div>
+      <div class="big shadow center">Welcome</div>
+      <section class="center spaced">
+        <div class="medium">
+          Take a Seat
+        </div>
+        <div class="medium">and - <span class="red">Enjoy</span></div>
+        <div class="medium">my <span class="red">Website</span></div>
+      </section>
+      <div class="big spin center">//</div>
       <button onclick="intro()">Play Intro</button>
       <h2>This is my website</h2>
       <p>Now that you're sitting comfortably, let's begin...</p>
@@ -61,7 +59,7 @@
           <p>God, too many to write down. Just ask.</p>
         </section>
       </article>
-      <div class="big spin">///</div>
+      <div class="big spin center">///</div>
       <article>
         <div class="medium">Portfolio</div>
         <div class="grid">
@@ -99,7 +97,7 @@
         </div>
       </article>
     </main>
-    <div class="big spin">////</div>
+    <div class="big spin center">////</div>
     <footer>
       <p class="center">Well, you made it. This is the end...</p>
     </footer>
@@ -116,7 +114,6 @@
 </script>
 <style>
   body {
-    margin: 50px 200px 0 200px;
     font-family: "Space Mono";
   }
   .grid {
@@ -129,25 +126,39 @@
   .medium {
     font-family: "Concert One";
   }
-  .big {
-    font-size: 200px;
-    text-align: center;
+  @media (min-width: 1100px) {
+    .big {
+      font-size: 200px;
+    }
+    .medium {
+      font-size: 100px;
+    }
+    body {
+      margin: 50px 200px 0 200px;
+    }
+    .spaced {
+      letter-spacing: 30px;
+    }
   }
-  .medium {
-    font-size: 100px;
-    text-align: center;
+  @media (max-width: 1100px) {
+    .big {
+      font-size: 72px;
+    }
+    .medium {
+      font-size: 48px;
+    }
   }
   .shadow {
     text-shadow: 2px 1px 5px red;
-  }
-  .spaced {
-    letter-spacing: 30px;
   }
   .center {
     text-align: center;
   }
   .red {
     color: red;
+  }
+  .padded {
+    padding: 50px;
   }
   .spin {
     border-radius: 50%;
