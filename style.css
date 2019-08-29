@@ -1,0 +1,65 @@
+body {
+  font-family: "Space Mono";
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+}
+h1,
+h2,
+.medium {
+  font-family: "Concert One";
+}
+@media (min-width: 1100px) {
+  .big {
+    font-size: 200px;
+  }
+  .medium {
+    font-size: 100px;
+  }
+  body {
+    margin: 50px 200px 0 200px;
+  }
+  .spaced {
+    letter-spacing: 30px;
+  }
+}
+@media (max-width: 1100px) {
+  .big {
+    font-size: 72px;
+  }
+  .medium {
+    font-size: 48px;
+  }
+}
+.shadow {
+  text-shadow: 2px 1px 5px red;
+}
+.center {
+  text-align: center;
+}
+.red {
+  color: red;
+}
+.padded {
+  padding: 50px;
+}
+.spin {
+  border-radius: 50%;
+  -webkit-transition: color 2s, -webkit-transform 0.8s ease-in-out;
+  transition: color 2s, transform 0.8s ease-in-out;
+  color: black;
+}
+.spin:hover {
+  -webkit-transform: rotate(720deg);
+  transform: rotate(720deg);
+  color: red;
+}
+.box {
+  color: black;
+  transition: color 2s;
+}
+.box:hover {
+  color: red;
+}
