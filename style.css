@@ -33,6 +33,35 @@ h2,
     font-size: 48px;
   }
 }
+img {
+  transition: 1s ease-in-out;
+  opacity: 1;
+  border-bottom: 0px solid red;
+  border-right: 0px solid black;
+}
+img:hover {
+  opacity: 0.5;
+  border-bottom: 50px solid red;
+  border-right: 50px solid grey;
+}
+button {
+  transition: 1s ease-in-out;
+  padding: 0;
+  border-radius: 10px;
+  border-bottom: 2px solid red;
+  color: black;
+}
+button:hover {
+  padding: 20px;
+  border-radius: 30px;
+  border-bottom: 10px solid red;
+  color: red;
+}
+button:active {
+  transition: 0.1s ease-in-out;
+  color: black;
+  border-bottom: 2px solid black;
+}
 .shadow {
   text-shadow: 2px 1px 5px red;
 }
